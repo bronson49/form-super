@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #9a9a9a;
+}
+.mainBlock {
+  margin: 100px auto 0;
+  width: max-content;
+}
+.mainBlock form {
+  background: #6a6a6a;
+}
+.mainBlock form div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.7rem;
+  font-family: Asap, monospace;
+  padding: 5px;
+  position: relative;
+}
+.mainBlock form div label {
+  color: #dcdae4;
+  cursor: pointer;
+}
+.mainBlock form div label.error {
+  position: absolute;
+  width: max-content;
+  color: #b54035;
+  bottom: 1rem;
+  left: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.mainBlock form div p {
+  margin: 5px 0;
+  color: #dcdae4;
+}
+.mainBlock form div input {
+  padding: 5px;
+  margin: 0 5px ;
+  background: #a7a7a7;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.4rem;
+}
+.mainBlock form div input[type="radio"],
+.mainBlock form div input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+.mainBlock form div input.error {
+  border: 1px solid red;
+}
+.mainBlock form div select {
+  width: 250px;
+}
+.mainBlock form div textarea {
+  color: white;
+  background: #a7a7a7;
+  font-size: 1.4rem;
+}
+.mainBlock form .wrapInpt {
+  display: block;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: white;
+  background: #a7a7a7;
+}

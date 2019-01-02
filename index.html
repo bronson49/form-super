@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Mego Form</title>
+
+   <link rel="stylesheet" href="lib/jquery/jquery-ui.min.css">
+   <link rel="stylesheet" href="lib/select2/select2.min.css">
+   <link rel="stylesheet" href="css/style.css">
+
+   <script src="lib/jquery/jquery-3.3.1.min.js"></script>
+   <script src="lib/jquery/jquery-ui.min.js"></script>
+   <script src="lib/jquery/localization.js"></script>
+   <script src="lib/select2/select2.min.js"></script>
+   <script src="lib/jquery.inputmask.bundle.min.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.min.js"></script>
+
+</head>
+<body>
+
+<section class="mainBlock">
+   <form id="form">
+      <div>
+         <label for="name">Your name: </label>
+         <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+         <label for="lastname">Your second name: </label>
+         <input type="text" id="lastname" name="lastname" required>
+      </div>
+      <div>
+         <label for="phone">Your phone: </label>
+         <input type="text" id="phone" name="phone" required>
+      </div>
+      <div>
+         <label for="email">Your E-mail: </label>
+         <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+         <label for="password">Enter password: </label>
+         <input type="password" id="password" name="password" required>
+      </div>
+      <div>
+         <label for="confirm_password">Confirm password: </label>
+         <input type="password" id="confirm_password" name="confirm_password" required>
+      </div>
+      <div >
+         <p><label for="user_nationality">Select nationality: </label></p>
+         <select name="nationality" id="user_nationality">
+            <option value="jew">Jew</option>
+            <option value="tatar">Tatar</option>
+            <option value="ethiopian">Ethiopian</option>
+         </select>
+      </div>
+      <div>
+         <label for="dateStart">Select date: </label>
+         <input type="text" id="dateStart" required>
+      </div>
+      <div class="wrapInpt">
+         <p>Select your gender: </p>
+         <label for="maleUser">Male</label><input type="radio" name="Sex" id="maleUser" value="male"  />
+         <label for="femaleUser">Female</label><input type="radio" name="Sex" id="femaleUser" value="female" />
+         <label for="otherUser">Other</label><input type="radio" name="Sex" id="otherUser" value="other" />
+      </div>
+      <div class="wrapInpt">
+         <p>Choose your skills: </p>
+         <p><input type="checkbox" name="skills" id="skill_html5" value="html5"><label for="skill_html5">HTML5</label></p>
+         <p><input type="checkbox" name="skills" id="skill_css3" value="css3"><label for="skill_css3">CSS3</label></p>
+         <p><input type="checkbox" name="skills" id="skill_angular" value="angular"><label for="skill_angular">Angular
+         </label></p>
+         <p><input type="checkbox" name="skills" id="skill_react" value="react"><label for="skill_react">React
+         </label></p>
+      </div>
+      <div class="wrapInpt">
+         <p><label for="msg">Type your message(optional):  </label></p>
+         <textarea name="message" id="msg" cols="50" rows="3"></textarea>
+      </div>
+      <div>
+         <input type="submit" value="READY">
+      </div>
+   </form>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
